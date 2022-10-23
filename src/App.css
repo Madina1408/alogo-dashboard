@@ -1,38 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Effra;
+  src: local("Effra"), local("Effra"),
+    url(./fonts/TrialStaticFonts/Effra_Trial_Rg.ttf);
+}
+
 .App {
-  text-align: center;
+  width: 100vw;
+  /* height: 1153px; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Effra;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@layer components {
+  .hover {
+    @apply hover:bg-[#EB5A3C] opacity-50 rounded-xl;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.background {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.752) 3%,
+      rgba(255, 255, 255, 0.703) 3%
+    ),
+    url("./assets/NavbarImages/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+@layer components {
+  .container {
+    @apply grid grid-cols-3 gap-5;
+  }
+}
+
+@layer components {
+  .borderBottom {
+    @apply border-b border-gray-300;
+  }
+}
+
+@layer components {
+  .card {
+    @apply flex shadow-2xl transition ease-in delay-200 hover:-translate-y-1
+    hover:scale-105 hover:bg-[#EB5A3C] duration-300 pl-4 pb-4 gap-2 rounded-[10px]
+    flex-col bg-white border-slate-500;
+  }
+}
+
+.card:hover .card-image-div {
+  background-color: white;
+  color: #eb5a3c;
+  transition: 280ms;
+}
+
+.card:hover .card-number {
   color: white;
+  transition: ease-in;
+  transition-delay: 280ms;
+}
+.card:hover .card-text {
+  color: black;
+  transition: 280ms;
+}
+.card:hover .card-add-div {
+  background-color: #eb5a3c;
+  color: white;
+  transition: 280ms;
 }
 
-.App-link {
-  color: #61dafb;
+.active-user-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 4px 40px rgba(15, 40, 55, 0.1);
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.b-shadow {
+  box-shadow: 0px 4px 40px rgba(15, 40, 55, 0.1);
+  border-radius: 10px;
+}
+
+@layer components {
+  .badgeCard {
+    @apply flex items-center gap-2 px-3 py-4;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.b-shadow-less {
+  box-shadow: 0px 0px 8px rgba(15, 40, 55, 0.05);
+  border-radius: 4px;
 }
