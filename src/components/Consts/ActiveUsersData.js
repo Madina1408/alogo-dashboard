@@ -1,5 +1,5 @@
 import React from 'react'
-import Profile from '../assets/NavbarImages/profilepic.svg'
+import Profile from '../../assets/NavbarImages/profilepic.svg'
 const ActiveUsersData = [
   {
     id:1,

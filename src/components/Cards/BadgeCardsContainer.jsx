@@ -12,16 +12,16 @@ function BadgeCardsContainer() {
         </a>
       </div>
       <div className="container">
-        <div className="bg-[#D3E3E1] b-shadow badgeCard">
-          <div className="bg-[#0F2837] rounded-[4px] h-11 w-11"></div>
+        <div className="bg-[#D3E3E1] badgeCard">
+          <div className="badgeText bg-[#0F2837]"></div>
           <BadgeCard />
         </div>
-        <div className="bg-[#FFD5A3] b-shadow badgeCard">
-          <div className="bg-[#FF9619] rounded-[4px] h-11 w-11"></div>
+        <div className="bg-[#FFD5A3] badgeCard">
+          <div className="bg-[#FF9619] badgeText"></div>
           <BadgeCard />
         </div>
-        <div className="bg-[#C5A3B5] b-shadow badgeCard">
-          <div className="bg-[#0F2837] rounded-[4px] h-11 w-11"></div>
+        <div className="bg-[#C5A3B5] badgeCard">
+          <div className="bg-[#0F2837] badgeText"></div>
           <BadgeCard />
         </div>
       </div>

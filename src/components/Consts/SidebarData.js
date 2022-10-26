@@ -1,11 +1,11 @@
 import React from 'react'
-import Home from '../assets/SidebarImages/home.svg';
-import User from '../assets/SidebarImages/users.svg'
-import Badge from '../assets/SidebarImages/badge.svg';
-import Reward from '../assets/SidebarImages/rewards.svg'
-import Point from '../assets/SidebarImages/points.svg'
-import Ticket from '../assets/SidebarImages/tickets.svg'
-import System from '../assets/SidebarImages/systems.svg'
+import Home from '../../assets/SidebarImages/home.svg';
+import User from '../../assets/SidebarImages/users.svg'
+import Badge from '../../assets/SidebarImages/badge.svg';
+import Reward from '../../assets/SidebarImages/rewards.svg'
+import Point from '../../assets/SidebarImages/points.svg'
+import Ticket from '../../assets/SidebarImages/tickets.svg'
+import System from '../../assets/SidebarImages/systems.svg'
 export const SidebarData = [
   {
     title:"Dashboard",

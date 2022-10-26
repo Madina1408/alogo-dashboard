@@ -6,6 +6,12 @@ function HorBarChart({ chartData }) {
     indexAxis: "y",
     plugins: {
       legend: {
+        labels:{
+          font:{
+            size:20,
+            weight: 'bold'
+          }
+        },
         display: false,
       },
     },

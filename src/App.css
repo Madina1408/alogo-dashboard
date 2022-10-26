@@ -25,15 +25,6 @@
   }
 }
 
-.background {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.752) 3%,
-      rgba(255, 255, 255, 0.703) 3%
-    ),
-    url("./assets/NavbarImages/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 body {
   height: 100vh;
@@ -43,6 +34,18 @@ body {
 @layer components {
   .container {
     @apply grid grid-cols-3 gap-5;
+  }
+}
+
+@layer components {
+  .badgeDiv {
+    @apply   badgeCard;
+  }
+}
+
+@layer components {
+  .badgeText {
+    @apply  rounded sm:h-11 sm:w-11 2xl:h-11 xl:h-9 2xl:w-11;
   }
 }
 
@@ -60,47 +63,9 @@ body {
   }
 }
 
-.card:hover .card-image-div {
-  background-color: white;
-  color: #eb5a3c;
-  transition: 280ms;
-}
-
-.card:hover .card-number {
-  color: white;
-  transition: ease-in;
-  transition-delay: 280ms;
-}
-.card:hover .card-text {
-  color: black;
-  transition: 280ms;
-}
-.card:hover .card-add-div {
-  background-color: #eb5a3c;
-  color: white;
-  transition: 280ms;
-}
-
-.active-user-card {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  box-shadow: 0px 4px 40px rgba(15, 40, 55, 0.1);
-  border-radius: 10px;
-}
-
-.b-shadow {
-  box-shadow: 0px 4px 40px rgba(15, 40, 55, 0.1);
-  border-radius: 10px;
-}
-
 @layer components {
   .badgeCard {
-    @apply flex items-center gap-2 px-3 py-4;
+    @apply flex items-center gap-2 px-3 py-4 shadow-lg rounded;
   }
 }
 
-.b-shadow-less {
-  box-shadow: 0px 0px 8px rgba(15, 40, 55, 0.05);
-  border-radius: 4px;
-}

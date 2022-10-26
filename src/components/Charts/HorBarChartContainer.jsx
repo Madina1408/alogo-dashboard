@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import HorBarChart from "./HorBarChart";
-import { ActiveUserData } from "./HorBarChartData";
+import { ActiveUserData } from "../Consts/HorBarChartData";
 function HorBarChartContainer() {
   const [userData, setUserData] = useState({
     labels: ActiveUserData.map((data) => data.userType),
@@ -30,9 +30,9 @@ function HorBarChartContainer() {
   });
 
   return (
-    <div className="w-[500px] borderBottom mx-auto py-4">
-      <div className="w-[90%] flex justify-between mx-auto">
-        <p className="text-[14px] font-bold">General Statistics</p>
+    <div className="xl:w-11/12 borderBottom mx-auto py-4">
+      <div className="xl:w-11/12 flex justify-between mx-auto">
+        <p className="text-sm lg:text-lg font-bold">General Statistics</p>
         <select
           className=" b-shadow-less h-7 opacity-50 text-[10px]"
           name="Months"
@@ -52,7 +52,7 @@ function HorBarChartContainer() {
           <option value="">December</option>
         </select>
       </div>
-      <div className="w-[90%] mx-auto">
+      <div className="xl:w-11/12 mx-auto">
         <HorBarChart chartData={userData} />
       </div>
     </div>

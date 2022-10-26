@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import BarChart from "./BarChart";
-import { UserData } from "./BarChartData";
+import { UserData } from "../Consts/BarChartData";
 function BarChartContainer() {
   const [userData, setUserData] = useState({
     labels: UserData.map((data) => data.month),
@@ -13,18 +13,19 @@ function BarChartContainer() {
         hoverBorderWidth: 2,
         hoverBackgroundColor: ["#EB5A3C"],
         hoverBorderRadius: 4,
+        color:['#9FA9AF'],
       },
     ]
   });
 
   return (
-    <div className="w-[500px] borderBottom mx-auto py-4">
-      <div className="w-[90%] mx-auto">
-      <p className="text-xl font-bold">General Statistics</p>
+    <div className="xl:w-11/12 borderBottom mx-auto py-4">
+      <div className="xl:w-11/12 mx-auto">
+      <p className="text-lg xl:text-xl font-bold">General Statistics</p>
       <div className="flex justify-between">
-        <p className="text-[14px] font-bold">Total New Registered Users</p>
+        <p className="text-sm lg:text-lg font-bold">Total New Registered Users</p>
       <select
-        className=" b-shadow-less h-7 opacity-50 text-[10px]"
+        className=" b-shadow-less h-7 opacity-50 text-[0.625rem]"
         name="Months"
         id=""
       >
@@ -43,7 +44,7 @@ function BarChartContainer() {
       </select>
       </div>
       </div>
-      <div className="w-[90%] mx-auto">
+      <div className="xl:w-11/12 mx-auto">
         <BarChart chartData={userData} />
       </div>
     </div>

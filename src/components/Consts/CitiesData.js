@@ -1,9 +1,6 @@
-import Riyadh from '../assets/CitiesImage/riyadh.png';
-// import BgRiyadh from '../assets/CitiesImage/bg-ryadh.png';
-import Jeddah from '../assets/CitiesImage/jeddah.png';
-// import BgJeddah from '../assets/CitiesImage/bg-jeddah.png';
-import Dammam from '../assets/CitiesImage/dammam.png';
-// import BgDammam from '../assets/CitiesImage/bg-dammam.png';
+import Riyadh from '../../assets/CitiesImage/riyadh.png';
+import Jeddah from '../../assets/CitiesImage/jeddah.png';
+import Dammam from '../../assets/CitiesImage/dammam.png';
 
 const CitiesData =[
 {
