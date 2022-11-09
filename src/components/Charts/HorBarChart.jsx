@@ -1,7 +1,7 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
 import { Chart as ChartJS } from "chart.js/auto";
-function HorBarChart({ chartData }) {
+function HorBarChart({ chartData }, {theme}) {
   const options = {
     indexAxis: "y",
     plugins: {
@@ -22,7 +22,7 @@ function HorBarChart({ chartData }) {
     }
   };
 
-  return <Bar data={chartData} options={options} />;
+  return <Bar theme={theme} data={chartData} options={options} />;
 }
 
 export default HorBarChart;

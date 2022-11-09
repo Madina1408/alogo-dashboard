@@ -8,7 +8,7 @@ function BadgeCard() {
           <div key={key}>
             <p className='text-md font-bold'>{val.badgeName}</p>
             <p className='lg:text-sm text-[0.725rem]'>Earned by: {val.earned} users</p>
-            <p className='lg:text-xs text-[0.725rem] text-orange-600 t'>Last earned: {val.lastEarned}</p>
+            <p className='lg:text-xs text-[0.725rem] text-skin-base t'>Last earned: {val.lastEarned}</p>
           </div>
         )
       })}

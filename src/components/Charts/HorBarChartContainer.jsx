@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import HorBarChart from "./HorBarChart";
 import { ActiveUserData } from "../Consts/HorBarChartData";
-function HorBarChartContainer() {
+import colors from 'tailwindcss/colors'
+function HorBarChartContainer({theme}) {
   const [userData, setUserData] = useState({
     labels: ActiveUserData.map((data) => data.userType),
     datasets: [
       {
         label: "Users",
         data: ActiveUserData.map((data) => data.userAmount),
-        backgroundColor: ["#FBDED8"],
+        backgroundColor: ['#FBDED8'],
         borderRadius: 4,
         hoverBorderWidth: 2,
         hoverBackgroundColor: ["#EB5A3C"],
@@ -53,7 +54,7 @@ function HorBarChartContainer() {
         </select>
       </div>
       <div className="xl:w-11/12 mx-auto">
-        <HorBarChart chartData={userData} />
+        <HorBarChart theme={theme} chartData={userData} />
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ function CardContainer() {
       <div className="flex self-end gap-2  items-center  mb-8">
         <p className="text-[10px] md:text-[11px] xl:text-xs ">Data shown from</p>
         <div className="flex   justify-end rounded items-center pr-3 gap-2 bg-white xl:w-52 sm:w-48 h-7">
-          <p className="text-[10px] md:text-[11px] xl:text-xs text-orange-500 ">
+          <p className="text-[10px] md:text-[11px] xl:text-xs text-skin-base ">
             October 10 - November 10, 2020
           </p>
           <img  src={calendar} alt="" />
@@ -35,7 +35,7 @@ function CardContainer() {
         <div>
           <div className="card border border-gray-400 py-12 items-center pl-[1px] ">
             <div>
-              <AiOutlinePlusCircle className="card-add-div w-9 h-9 text-[#EB5A3C]" />
+              <AiOutlinePlusCircle className="card-add-div w-9 h-9 text-skin-base" />
             </div>
             <h4 className="card-text text-[#87949B]">Add New Card</h4>
           </div>

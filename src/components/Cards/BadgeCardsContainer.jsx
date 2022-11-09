@@ -6,7 +6,7 @@ function BadgeCardsContainer() {
       <div className="flex justify-between font-bold">
         <p>Top Earned Badges</p>
         <a href="#">
-          <p className="text-[#EB5A3C] underline underline-offset-2 decoration-solid">
+          <p className="text-skin-base underline underline-offset-2 decoration-solid">
             View All Badges
           </p>
         </a>

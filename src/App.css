@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+  :root{
+    --text-color:rgb(235, 90, 60);
+    --bar-color:rgb(251, 222, 216);
+    --bg-color:rgb(235, 90, 60);
+  }
+  .theme-yellow {
+    --text-color:rgb(255, 182, 94);
+    --bar-color:rgb(255, 234, 209);
+    --bg-color:rgb(255, 182, 94);
+  }
+  .theme-purple{
+    --text-color:rgb(110, 25, 70);
+    --bar-color:rgb(226, 209, 218);
+    --bg-color:rgb(110, 25, 70);
+  }
+  .theme-dark-blue{
+    --text-color:rgb(15, 40, 55);
+    --bar-color:rgb(207, 212, 215);
+    --bg-color:rgb(15, 40, 55);
+  }
+}
+
 @font-face {
   font-family: Effra;
   src: local("Effra"), local("Effra"),
@@ -21,7 +44,7 @@
 
 @layer components {
   .hover {
-    @apply hover:bg-[#EB5A3C] opacity-50 rounded-xl;
+    @apply hover:bg-skin-fill opacity-50 rounded-xl;
   }
 }
 
@@ -58,7 +81,7 @@ body {
 @layer components {
   .card {
     @apply flex shadow-2xl transition ease-in delay-200 hover:-translate-y-1
-    hover:scale-105 hover:bg-[#EB5A3C] duration-300 pl-4 pb-4 gap-2 rounded-[10px]
+    hover:scale-105 hover:bg-skin-fill duration-300 pl-4 pb-4 gap-2 rounded-[10px]
     flex-col bg-white border-slate-500;
   }
 }
